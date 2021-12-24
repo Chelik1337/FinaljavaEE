@@ -1,9 +1,7 @@
 package com.javaeefinal.itse1908r.javaeefinal.Services;
 
 import com.javaeefinal.itse1908r.javaeefinal.Models.Group;
-import com.javaeefinal.itse1908r.javaeefinal.Models.Role;
 import com.javaeefinal.itse1908r.javaeefinal.Models.StudentDetail;
-import com.javaeefinal.itse1908r.javaeefinal.Repositories.RoleRepository;
 import com.javaeefinal.itse1908r.javaeefinal.Repositories.StudentDetailRepository;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

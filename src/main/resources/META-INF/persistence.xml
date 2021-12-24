@@ -9,6 +9,8 @@
             <class>com.javaeefinal.itse1908r.javaeefinal.Models.User</class>
         <class>com.javaeefinal.itse1908r.javaeefinal.Models.Category</class>
         <class>com.javaeefinal.itse1908r.javaeefinal.Models.Institution</class>
+        <class>com.javaeefinal.itse1908r.javaeefinal.Models.Group</class>
+        <class>com.javaeefinal.itse1908r.javaeefinal.Models.StudentDetail</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/Tima" />

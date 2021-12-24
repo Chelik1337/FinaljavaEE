@@ -1,6 +1,5 @@
 package com.javaeefinal.itse1908r.javaeefinal.Services;
 
-import com.javaeefinal.itse1908r.javaeefinal.Models.Category;
 import com.javaeefinal.itse1908r.javaeefinal.Models.Group;
 import com.javaeefinal.itse1908r.javaeefinal.Repositories.GroupRepository;
 import org.junit.runner.RunWith;

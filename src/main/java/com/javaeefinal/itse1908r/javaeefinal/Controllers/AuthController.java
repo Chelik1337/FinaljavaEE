@@ -20,8 +20,6 @@ public class AuthController implements ExceptionMapper {
     @EJB
     JWTService jwtService;
 
-    @EJB
-    UserdetailService userdetailService;
 
     @EJB
     UserService userService;

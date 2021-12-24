@@ -1,7 +1,6 @@
 package com.javaeefinal.itse1908r.javaeefinal.RepositoryImpl;
 
 import com.javaeefinal.itse1908r.javaeefinal.EntityManager;
-import com.javaeefinal.itse1908r.javaeefinal.Models.Category;
 import com.javaeefinal.itse1908r.javaeefinal.Models.Group;
 import com.javaeefinal.itse1908r.javaeefinal.Repositories.GroupRepository;
 

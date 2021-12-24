@@ -1,8 +1,15 @@
 package com.javaeefinal.itse1908r.javaeefinal.Models;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "groups")
 public class Group {
     @Id
@@ -16,6 +23,18 @@ public class Group {
     @ManyToOne
     @JoinColumn(name = "student")
     private StudentDetail student;
+
+    @ManyToOne
+    @JoinColumn(name = "teacher")
+    private User teacher;
+
+    public User getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(User teacher) {
+        this.teacher = teacher;
+    }
 
     public StudentDetail getStudent() {
         return student;

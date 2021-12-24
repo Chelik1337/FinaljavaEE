@@ -37,7 +37,8 @@ public class StudentDetailImpl implements StudentDetailRepository {
     public StudentDetail updateGroupById(int id, Group group) {
         javax.persistence.EntityManager entityManager = em.manager();
         StudentDetail studentDetail = entityManager.find(StudentDetail.class, id);
-
+        Group group1 = entityManager.find(Group.class, group.getId());
+        studentDetail.setGroup(group1);
         entityManager.persist(studentDetail);
         return studentDetail;
     }
