@@ -5,7 +5,6 @@ import com.javaeefinal.itse1908r.javaeefinal.Models.User;
 import com.javaeefinal.itse1908r.javaeefinal.Log.Logged;
 import com.javaeefinal.itse1908r.javaeefinal.Security.JWTService;
 import com.javaeefinal.itse1908r.javaeefinal.Services.UserService;
-import com.javaeefinal.itse1908r.javaeefinal.Services.UserdetailService;
 
 import javax.annotation.security.PermitAll;
 import javax.ejb.EJB;

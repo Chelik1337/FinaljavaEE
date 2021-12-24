@@ -7,12 +7,6 @@
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
             <class>com.javaeefinal.itse1908r.javaeefinal.Models.Role</class>
             <class>com.javaeefinal.itse1908r.javaeefinal.Models.User</class>
-            <class>com.javaeefinal.itse1908r.javaeefinal.Models.Building</class>
-            <class>com.javaeefinal.itse1908r.javaeefinal.Models.BuildingsCategory</class>
-            <class>com.javaeefinal.itse1908r.javaeefinal.Models.Terminal</class>
-            <class>com.javaeefinal.itse1908r.javaeefinal.Models.Servicepointstatus</class>
-            <class>com.javaeefinal.itse1908r.javaeefinal.Models.Category</class>
-        <class>com.javaeefinal.itse1908r.javaeefinal.Models.Userdetail</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/Tima" />

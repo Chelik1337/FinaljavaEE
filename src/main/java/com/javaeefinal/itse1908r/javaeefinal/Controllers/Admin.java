@@ -3,7 +3,6 @@ package com.javaeefinal.itse1908r.javaeefinal.Controllers;
 import com.javaeefinal.itse1908r.javaeefinal.Models.ERole;
 import com.javaeefinal.itse1908r.javaeefinal.Models.User;
 import com.javaeefinal.itse1908r.javaeefinal.JMS.Message;
-import com.javaeefinal.itse1908r.javaeefinal.Services.BuildingService;
 import com.javaeefinal.itse1908r.javaeefinal.Services.UserService;
 
 import javax.annotation.security.RolesAllowed;
