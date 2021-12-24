@@ -70,6 +70,7 @@ public class InstitutionRepositoryImpl implements InstitutionRepository {
             Institution institution = entityManager.find(Institution.class, id);
             institution.setAddress(newAddress);
             entityManager.persist(institution);
+            return institution;
         } catch (NoResultException e){
             return null;
         }
