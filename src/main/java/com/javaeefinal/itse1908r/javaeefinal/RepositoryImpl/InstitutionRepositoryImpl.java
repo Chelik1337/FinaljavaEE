@@ -78,6 +78,5 @@ public class InstitutionRepositoryImpl implements InstitutionRepository {
         } catch (NoResultException e){
             return null;
         }
-        return new Institution();
     }
 }
