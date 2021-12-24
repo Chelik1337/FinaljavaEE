@@ -18,8 +18,8 @@ public class CategoryService {
     CategoryRepository categoryRepository;
 
     //    @Test
-    public List<Category> getAllCategories() {return categoryRepository.findAll()}
+    public List<Category> getAllCategories() {return categoryRepository.findAll();}
 
     //    @Test
-    public Category getCategoryById(int id) {return categoryRepository.findById();}
+    public Category getCategoryById(int id) {return categoryRepository.findById(id);}
 }
