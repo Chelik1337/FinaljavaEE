@@ -7,6 +7,7 @@ import com.javaeefinal.itse1908r.javaeefinal.Repositories.InstitutionRepository;
 import javax.inject.Inject;
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.List;
 
 public class InstitutionRepositoryImpl implements InstitutionRepository {
@@ -36,6 +37,7 @@ public class InstitutionRepositoryImpl implements InstitutionRepository {
         } catch (NoResultException e){
             return null;
         }
+
     }
 
     @Override
@@ -48,6 +50,7 @@ public class InstitutionRepositoryImpl implements InstitutionRepository {
         } catch (NoResultException e){
             return null;
         }
+
     }
 
     @Override
@@ -61,6 +64,7 @@ public class InstitutionRepositoryImpl implements InstitutionRepository {
         } catch (NoResultException e){
             return null;
         }
+
     }
 
     @Override
@@ -73,5 +77,6 @@ public class InstitutionRepositoryImpl implements InstitutionRepository {
         } catch (NoResultException e){
             return null;
         }
+        return new Institution();
     }
 }
