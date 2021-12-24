@@ -32,6 +32,8 @@ public class GroupRepositoryImpl implements GroupRepository {
         try {
             Group result = entityManager.find(Group.class, id);
             return result;
+        }catch (NoResultException e){
+            return null;
         }
         return null;
     }
@@ -44,8 +46,10 @@ public class GroupRepositoryImpl implements GroupRepository {
             result.setName(name);
             entityManager.persist(result);
             return result;
+        }catch (NoResultException e){
+            return null;
         }
-        return null;
+
     }
 
     @Override
