@@ -35,7 +35,6 @@ public class GroupRepositoryImpl implements GroupRepository {
         }catch (NoResultException e){
             return null;
         }
-        return null;
     }
 
     @Override

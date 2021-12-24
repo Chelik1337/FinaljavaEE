@@ -7,5 +7,5 @@ import java.util.List;
 public interface StudentDetailRepository {
     List<StudentDetail> findAll();
     StudentDetail findById(int id);
-    StudentDetail updateGroupByIdandGroupName(int id, String group);
+    StudentDetail updateGroupByIdandGroupName(int id, int group);
 }
