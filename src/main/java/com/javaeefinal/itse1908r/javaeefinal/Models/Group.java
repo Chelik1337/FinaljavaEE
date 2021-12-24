@@ -21,42 +21,7 @@ public class Group {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "student")
-    private StudentDetail student;
-
-    @ManyToOne
     @JoinColumn(name = "teacher")
     private User teacher;
 
-    public User getTeacher() {
-        return teacher;
-    }
-
-    public void setTeacher(User teacher) {
-        this.teacher = teacher;
-    }
-
-    public StudentDetail getStudent() {
-        return student;
-    }
-
-    public void setStudent(StudentDetail student) {
-        this.student = student;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 }

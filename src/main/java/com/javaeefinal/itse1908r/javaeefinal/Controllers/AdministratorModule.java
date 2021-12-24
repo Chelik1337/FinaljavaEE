@@ -1,6 +1,8 @@
 package com.javaeefinal.itse1908r.javaeefinal.Controllers;
 
 import com.javaeefinal.itse1908r.javaeefinal.Services.InstitutionService;
+import com.javaeefinal.itse1908r.javaeefinal.Services.UserService;
+
 import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.jms.JMSException;
@@ -15,6 +17,9 @@ public class AdministratorModule implements ExceptionMapper {
     @EJB
     InstitutionService institutionService;
 
+    @EJB
+    UserService userService;
+
     @Context
     UriInfo uriInfo;
     @Context
@@ -23,6 +28,26 @@ public class AdministratorModule implements ExceptionMapper {
     HttpHeaders httpHeaders;
 
 
+    @POST
+    @Path("/createUser")
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    public Response createNewUser(@FormParam("login") String login, @FormParam("password") String password){
+        return Response.ok().entity(userService.createNewUser(login,password)).build();
+    }
+
+    @PUT
+    @Path("/user/{id}")
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    public Response updatePassword(@PathParam("id") int id, @FormParam("password") String name){
+        return Response.ok().entity(userService.updatePasswordById(id,name)).build();
+    }
+
+    @PUT
+    @Path("/user/{login}")
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    public Response updatePasswordByLogin(@PathParam("login") String login, @FormParam("password") String password){
+        return Response.ok().entity(userService.updatePasswordByLogin(login,password)).build();
+    }
 
     @GET
     @Path("/getAllInstitutions")

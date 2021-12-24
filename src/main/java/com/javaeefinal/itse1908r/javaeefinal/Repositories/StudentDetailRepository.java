@@ -9,4 +9,5 @@ public interface StudentDetailRepository {
     List<StudentDetail> findAll();
     StudentDetail findById(int id);
     StudentDetail updateGroupById(int id, Group group);
+    StudentDetail insertDetail(String name);
 }

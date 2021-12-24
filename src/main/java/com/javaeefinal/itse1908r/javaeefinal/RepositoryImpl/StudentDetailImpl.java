@@ -42,4 +42,11 @@ public class StudentDetailImpl implements StudentDetailRepository {
         entityManager.persist(studentDetail);
         return studentDetail;
     }
+
+    @Override
+    public StudentDetail insertDetail(String name) {
+        javax.persistence.EntityManager entityManager = em.manager();
+        StudentDetail studentDetail = new StudentDetail();
+        return studentDetail;
+    }
 }
