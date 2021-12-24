@@ -1,6 +1,7 @@
 package com.javaeefinal.itse1908r.javaeefinal.RepositoryImpl;
 
 import com.javaeefinal.itse1908r.javaeefinal.EntityManager;
+import com.javaeefinal.itse1908r.javaeefinal.Models.Group;
 import com.javaeefinal.itse1908r.javaeefinal.Models.StudentDetail;
 import com.javaeefinal.itse1908r.javaeefinal.Repositories.StudentDetailRepository;
 
@@ -33,10 +34,10 @@ public class StudentDetailImpl implements StudentDetailRepository {
     }
 
     @Override
-    public StudentDetail updateGroupByIdandGroupName(int id, int group) {
+    public StudentDetail updateGroupById(int id, Group group) {
         javax.persistence.EntityManager entityManager = em.manager();
         StudentDetail studentDetail = entityManager.find(StudentDetail.class, id);
-        studentDetail.setGroupId(group);
+
         entityManager.persist(studentDetail);
         return studentDetail;
     }
